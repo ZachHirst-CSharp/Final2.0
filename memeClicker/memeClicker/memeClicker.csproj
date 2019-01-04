@@ -91,5 +91,26 @@
   <ItemGroup>
     <None Include="Resources\0wap3cp4khm01.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12198090531909861341man-silhouette.svg_.hi_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police-305626_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portrait-outline_%288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweetaholic_Zombie_Blacked_Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie-silhouette.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
