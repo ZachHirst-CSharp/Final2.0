@@ -73,6 +73,16 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12198090531909861341man_silhouette_svg__hi_ {
+            get {
+                object obj = ResourceManager.GetObject("_12198090531909861341man_silhouette_svg__hi_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1488946843939347 {
             get {
                 object obj = ResourceManager.GetObject("_1488946843939347", resourceCulture);
@@ -83,9 +93,39 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image1 {
+        internal static System.Drawing.Bitmap images {
             get {
-                object obj = ResourceManager.GetObject("Image1", resourceCulture);
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap police_305626_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("police_305626_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Portrait_outline__8_ {
+            get {
+                object obj = ResourceManager.GetObject("Portrait_outline__8_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,26 @@ namespace memeClicker.Properties {
         internal static System.Drawing.Bitmap red_button_for_web {
             get {
                 object obj = ResourceManager.GetObject("red_button_for_web", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sweetaholic_Zombie_Blacked_Out {
+            get {
+                object obj = ResourceManager.GetObject("Sweetaholic_Zombie_Blacked_Out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zombie_silhouette {
+            get {
+                object obj = ResourceManager.GetObject("zombie_silhouette", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
