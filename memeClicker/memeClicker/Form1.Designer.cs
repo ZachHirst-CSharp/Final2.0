@@ -29,14 +29,18 @@
         private void InitializeComponent()
         {
             this.lblNumber = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.meme1 = new System.Windows.Forms.Button();
+            this.lblmultiplier = new System.Windows.Forms.Label();
+            this.meme2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumber
@@ -51,19 +55,10 @@
             this.lblNumber.TabIndex = 1;
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(96, 183);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::memeClicker.Properties.Resources._0wap3cp4khm01;
-            this.pictureBox2.Location = new System.Drawing.Point(196, 183);
+            this.pictureBox2.Location = new System.Drawing.Point(196, 203);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(416, 216);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,12 +90,50 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::memeClicker.Properties.Resources.images;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 183);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 183);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(203, 236);
+            this.pictureBox3.Size = new System.Drawing.Size(190, 236);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::memeClicker.Properties.Resources.images__1_;
+            this.pictureBox4.Location = new System.Drawing.Point(196, 183);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(416, 236);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            // 
+            // meme1
+            // 
+            this.meme1.Location = new System.Drawing.Point(12, 183);
+            this.meme1.Name = "meme1";
+            this.meme1.Size = new System.Drawing.Size(178, 14);
+            this.meme1.TabIndex = 7;
+            this.meme1.UseVisualStyleBackColor = true;
+            this.meme1.Visible = false;
+            this.meme1.Click += new System.EventHandler(this.meme1_Click);
+            // 
+            // lblmultiplier
+            // 
+            this.lblmultiplier.BackColor = System.Drawing.SystemColors.Control;
+            this.lblmultiplier.Location = new System.Drawing.Point(167, 12);
+            this.lblmultiplier.Name = "lblmultiplier";
+            this.lblmultiplier.Size = new System.Drawing.Size(194, 23);
+            this.lblmultiplier.TabIndex = 8;
+            // 
+            // meme2
+            // 
+            this.meme2.Location = new System.Drawing.Point(208, 183);
+            this.meme2.Name = "meme2";
+            this.meme2.Size = new System.Drawing.Size(404, 14);
+            this.meme2.TabIndex = 9;
+            this.meme2.UseVisualStyleBackColor = true;
+            this.meme2.Visible = false;
+            this.meme2.Click += new System.EventHandler(this.meme2_Click);
             // 
             // Form1
             // 
@@ -108,8 +141,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1376, 737);
+            this.Controls.Add(this.meme2);
+            this.Controls.Add(this.lblmultiplier);
+            this.Controls.Add(this.meme1);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblNumber);
@@ -119,8 +155,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -130,8 +166,11 @@
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button meme1;
+        private System.Windows.Forms.Label lblmultiplier;
+        private System.Windows.Forms.Button meme2;
     }
 }
 
