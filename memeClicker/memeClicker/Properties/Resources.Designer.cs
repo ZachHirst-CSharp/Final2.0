@@ -73,9 +73,9 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _12198090531909861341man_silhouette_svg__hi_ {
+        internal static System.Drawing.Bitmap _1488946843939347 {
             get {
-                object obj = ResourceManager.GetObject("_12198090531909861341man_silhouette_svg__hi_", resourceCulture);
+                object obj = ResourceManager.GetObject("_1488946843939347", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,39 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1488946843939347 {
+        internal static System.Drawing.Bitmap _5768a9b952f6a9a333b22142abf7ccfc {
             get {
-                object obj = ResourceManager.GetObject("_1488946843939347", resourceCulture);
+                object obj = ResourceManager.GetObject("_5768a9b952f6a9a333b22142abf7ccfc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ClickerTitle {
+            get {
+                object obj = ResourceManager.GetObject("ClickerTitle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__1_ {
+            get {
+                object obj = ResourceManager.GetObject("download__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +136,46 @@ namespace memeClicker.Properties {
         internal static System.Drawing.Bitmap images__1_ {
             get {
                 object obj = ResourceManager.GetObject("images__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__2_ {
+            get {
+                object obj = ResourceManager.GetObject("images__2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagesd {
+            get {
+                object obj = ResourceManager.GetObject("imagesd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault__1_ {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +213,9 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sweetaholic_Zombie_Blacked_Out {
+        internal static System.Drawing.Bitmap title {
             get {
-                object obj = ResourceManager.GetObject("Sweetaholic_Zombie_Blacked_Out", resourceCulture);
+                object obj = ResourceManager.GetObject("title", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
