@@ -8,23 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Console;
+using System.Timers;
 
 namespace memeClicker
 {
     public partial class Form1 : Form
     {
+        public static System.Timers.Timer aTimer;
+
         public double[] MultiplierArray = { 1.1, 1.5, 2.1, 6.5, 14.3, 18.6, 23.4, 33.1, 48.9, 56.7};
         public double balance = 0;
         public int tick1 = 1, tick2 = 1, tick3 = 1, tick4 = 1, tick5 = 1, tick6 = 1, tick7 = 1, tick8 = 1, tick9 = 1, tick10 = 1;
+        public double upgradestrength = 0;
 
-       
-
-        private void button2_Click(object sender, EventArgs e)
+        private static void SetTimer()
         {
-            balance += 10000;
+            // Create a timer with a two second interval.
+            aTimer = new System.Timers.Timer(2000);
+            // Hook up the Elapsed event for the timer. 
+            aTimer.Elapsed += OnTimedEvent;
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
         }
 
-        public double upgradestrength = 0;
+        private static void OnTimedEvent(object sender, ElapsedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         public Form1()
         {

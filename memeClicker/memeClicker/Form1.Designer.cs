@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblNumber = new System.Windows.Forms.Label();
             this.meme1 = new System.Windows.Forms.Button();
@@ -41,6 +42,10 @@
             this.lblmeme3 = new System.Windows.Forms.Label();
             this.lblmeme4 = new System.Windows.Forms.Label();
             this.lblmeme5 = new System.Windows.Forms.Label();
+            this.meme6 = new System.Windows.Forms.Button();
+            this.lblmeme6 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -52,10 +57,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.meme6 = new System.Windows.Forms.Button();
-            this.lblmeme6 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -66,8 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumber
@@ -192,6 +194,46 @@
             this.lblmeme5.TabIndex = 23;
             this.lblmeme5.Visible = false;
             // 
+            // meme6
+            // 
+            this.meme6.Location = new System.Drawing.Point(303, 363);
+            this.meme6.Name = "meme6";
+            this.meme6.Size = new System.Drawing.Size(118, 23);
+            this.meme6.TabIndex = 26;
+            this.meme6.Text = "500000 Points";
+            this.meme6.UseVisualStyleBackColor = true;
+            this.meme6.Visible = false;
+            this.meme6.Click += new System.EventHandler(this.meme6_Click);
+            // 
+            // lblmeme6
+            // 
+            this.lblmeme6.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblmeme6.Location = new System.Drawing.Point(470, 363);
+            this.lblmeme6.Name = "lblmeme6";
+            this.lblmeme6.Size = new System.Drawing.Size(100, 23);
+            this.lblmeme6.TabIndex = 27;
+            this.lblmeme6.Visible = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::memeClicker.Properties.Resources.images__2_;
+            this.pictureBox12.Location = new System.Drawing.Point(287, 353);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(325, 262);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 25;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::memeClicker.Properties.Resources.maxresdefault__1_;
+            this.pictureBox11.Location = new System.Drawing.Point(287, 400);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(325, 215);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 24;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::memeClicker.Properties.Resources.imagesd;
@@ -304,45 +346,8 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox11
+            // timer1
             // 
-            this.pictureBox11.Image = global::memeClicker.Properties.Resources.maxresdefault__1_;
-            this.pictureBox11.Location = new System.Drawing.Point(287, 400);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(325, 215);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 24;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::memeClicker.Properties.Resources.images__2_;
-            this.pictureBox12.Location = new System.Drawing.Point(287, 353);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(325, 262);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 25;
-            this.pictureBox12.TabStop = false;
-            // 
-            // meme6
-            // 
-            this.meme6.Location = new System.Drawing.Point(303, 363);
-            this.meme6.Name = "meme6";
-            this.meme6.Size = new System.Drawing.Size(118, 23);
-            this.meme6.TabIndex = 26;
-            this.meme6.Text = "500000 Points";
-            this.meme6.UseVisualStyleBackColor = true;
-            this.meme6.Visible = false;
-            this.meme6.Click += new System.EventHandler(this.meme6_Click);
-            // 
-            // lblmeme6
-            // 
-            this.lblmeme6.BackColor = System.Drawing.Color.AliceBlue;
-            this.lblmeme6.Location = new System.Drawing.Point(470, 363);
-            this.lblmeme6.Name = "lblmeme6";
-            this.lblmeme6.Size = new System.Drawing.Size(100, 23);
-            this.lblmeme6.TabIndex = 27;
-            this.lblmeme6.Visible = false;
             // 
             // Form1
             // 
@@ -378,7 +383,8 @@
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -389,8 +395,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,6 +428,7 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button meme6;
         private System.Windows.Forms.Label lblmeme6;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

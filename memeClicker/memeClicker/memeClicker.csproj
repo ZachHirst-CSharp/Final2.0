@@ -148,5 +148,8 @@
   <ItemGroup>
     <None Include="Resources\ClickerTitle.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
