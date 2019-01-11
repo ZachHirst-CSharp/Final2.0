@@ -14,6 +14,7 @@ namespace memeClicker
     {
         public Title()
         {
+            this.FormBorderStyle = FormBorderStyle.None; //removes border
             InitializeComponent();
         }
 
@@ -23,6 +24,11 @@ namespace memeClicker
             f.Show();
            
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

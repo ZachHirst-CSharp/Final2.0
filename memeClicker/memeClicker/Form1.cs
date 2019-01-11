@@ -14,32 +14,58 @@ namespace memeClicker
 {
     public partial class Form1 : Form
     {
-        public static System.Timers.Timer aTimer;
-
+        private static System.Timers.Timer aTimer;
         public double[] MultiplierArray = { 1.1, 1.5, 2.1, 6.5, 14.3, 18.6, 23.4, 33.1, 48.9, 56.7};
         public double balance = 0;
+        public int ticktimer = 1, timerupgrade;
         public int tick1 = 1, tick2 = 1, tick3 = 1, tick4 = 1, tick5 = 1, tick6 = 1, tick7 = 1, tick8 = 1, tick9 = 1, tick10 = 1;
         public double upgradestrength = 0;
 
-        private static void SetTimer()
+        private void timerbuy_Click(object sender, EventArgs e)
         {
-            // Create a timer with a two second interval.
-            aTimer = new System.Timers.Timer(2000);
-            // Hook up the Elapsed event for the timer. 
-            aTimer.Elapsed += OnTimedEvent;
-            aTimer.AutoReset = true;
-            aTimer.Enabled = true;
+            if(balance < 200)
+            {
+
+            }
+            else if(balance >= 200)
+            {
+                // Create a timer and set a five second interval.
+                aTimer = new System.Timers.Timer();
+                aTimer.Interval = 5000;
+
+                // Hook up the Elapsed event for the timer. 
+                aTimer.Elapsed += OnTimedEvent;
+
+                // Have the timer fire repeated events (true is the default)
+                aTimer.AutoReset = true;
+
+                // Start the timer
+                aTimer.Enabled = true;
+
+                balance -= 200; //cost of timer
+            }
         }
 
-        private static void OnTimedEvent(object sender, ElapsedEventArgs e)
+        private void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
+            ++ticktimer;
+            timerupgrade = ticktimer * 50; //number of upgrades multiplied by 50
+            lbltimer.Text = "At time " + e.SignalTime + " " + timerupgrade + " points were added. \n"; //labeling the time
+            balance = balance + timerupgrade; //50 points per 5 seconds
+            lblNumber.Text = "" + balance; //labeling the points
+            lbltimerupgrade.Text = "Multiplier: " + timerupgrade;
             throw new NotImplementedException();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         public Form1()
         {
             InitializeComponent();
-            this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.FormBorderStyle = FormBorderStyle.None; //removes border
         }
 
         private void button1_Click(object sender, EventArgs e)
