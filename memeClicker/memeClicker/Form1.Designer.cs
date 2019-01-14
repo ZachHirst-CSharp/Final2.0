@@ -279,7 +279,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::memeClicker.Properties.Resources.police_305626_960_720;
-            this.pictureBox6.Location = new System.Drawing.Point(608, 83);
+            this.pictureBox6.Location = new System.Drawing.Point(608, 82);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(372, 231);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,6 +361,7 @@
             // lbltimer
             // 
             this.lbltimer.BackColor = System.Drawing.Color.AliceBlue;
+            this.lbltimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltimer.Location = new System.Drawing.Point(901, 2);
             this.lbltimer.Name = "lbltimer";
             this.lbltimer.Size = new System.Drawing.Size(285, 28);
@@ -389,7 +390,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1304, 712);
+            this.ClientSize = new System.Drawing.Size(1304, 547);
             this.Controls.Add(this.lbltimerupgrade);
             this.Controls.Add(this.timerbuy);
             this.Controls.Add(this.lbltimer);
