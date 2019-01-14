@@ -15,7 +15,7 @@ namespace memeClicker
     public partial class Form1 : Form
     {
         private static System.Timers.Timer aTimer;
-        public double[] MultiplierArray = { 1.1, 1.5, 2.1, 6.5, 14.3, 18.6, 23.4, 33.1, 48.9, 56.7};
+        public double[] MultiplierArray = { 1.1, 1.5, 2.1, 6.5, 14.3, 18.6, 23.4, 33.1, 48.9, 56.7}; // Array That decides the multiplier
         public double balance = 0;
         public int ticktimer = 1, timerupgrade;
         public int tick1 = 1, tick2 = 1, tick3 = 1, tick4 = 1, tick5 = 1, tick6 = 1, tick7 = 1, tick8 = 1, tick9 = 1, tick10 = 1;
@@ -75,7 +75,7 @@ namespace memeClicker
             balance = upgradestrength + balance;
             lblmultiplier.Text = "Multiplier = " + upgradestrength;
 
-            if (balance >= 10 && balance < 100)
+            if (balance >= 10 && balance < 100) // Makes memes visible at certain value
             {
                 pictureBox3.Visible = false;
                 meme1.Visible = true;
@@ -113,7 +113,7 @@ namespace memeClicker
             }
         }
 
-        private void meme1_Click(object sender, EventArgs e)
+        private void meme1_Click(object sender, EventArgs e) // Upgrade #1
         {
            if(balance < 10)
             {
@@ -131,7 +131,7 @@ namespace memeClicker
             }
         }
 
-        private void meme2_Click(object sender, EventArgs e)
+        private void meme2_Click(object sender, EventArgs e) // Upgrade #2
         {
             if(balance < 100)
             {
@@ -147,7 +147,7 @@ namespace memeClicker
             }
         }
 
-        private void meme3_Click(object sender, EventArgs e)
+        private void meme3_Click(object sender, EventArgs e) // Upgrade #3
         {
             if(balance < 1000)
             {
@@ -163,7 +163,7 @@ namespace memeClicker
             }
         }
 
-        private void meme4_Click(object sender, EventArgs e)
+        private void meme4_Click(object sender, EventArgs e) // Upgrade #4
         {
             if (balance < 10000)
             {
@@ -179,7 +179,7 @@ namespace memeClicker
             }
         }
 
-        private void meme5_Click(object sender, EventArgs e)
+        private void meme5_Click(object sender, EventArgs e) // Upgrade #5
         {
             if (balance < 100000)
             {
@@ -195,7 +195,7 @@ namespace memeClicker
             }
         }
 
-        private void meme6_Click(object sender, EventArgs e)
+        private void meme6_Click(object sender, EventArgs e) // Upgrade #6
         {
             if (balance < 500000)
             {

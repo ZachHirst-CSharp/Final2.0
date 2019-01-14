@@ -389,7 +389,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1304, 548);
+            this.ClientSize = new System.Drawing.Size(1304, 712);
             this.Controls.Add(this.lbltimerupgrade);
             this.Controls.Add(this.timerbuy);
             this.Controls.Add(this.lbltimer);
