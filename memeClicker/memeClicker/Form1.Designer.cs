@@ -43,6 +43,14 @@
             this.lblmeme5 = new System.Windows.Forms.Label();
             this.meme6 = new System.Windows.Forms.Button();
             this.lblmeme6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lbltimer = new System.Windows.Forms.Label();
+            this.timerbuy = new System.Windows.Forms.Button();
+            this.lbltimerupgrade = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -56,10 +64,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lbltimer = new System.Windows.Forms.Label();
-            this.timerbuy = new System.Windows.Forms.Button();
-            this.lbltimerupgrade = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -216,6 +224,83 @@
             this.lblmeme6.TabIndex = 27;
             this.lblmeme6.Visible = false;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1208, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 28);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Click to exit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lbltimer
+            // 
+            this.lbltimer.BackColor = System.Drawing.Color.AliceBlue;
+            this.lbltimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltimer.Location = new System.Drawing.Point(901, 2);
+            this.lbltimer.Name = "lbltimer";
+            this.lbltimer.Size = new System.Drawing.Size(285, 28);
+            this.lbltimer.TabIndex = 29;
+            // 
+            // timerbuy
+            // 
+            this.timerbuy.Location = new System.Drawing.Point(519, 6);
+            this.timerbuy.Name = "timerbuy";
+            this.timerbuy.Size = new System.Drawing.Size(121, 28);
+            this.timerbuy.TabIndex = 30;
+            this.timerbuy.Text = "Buy Timer - 200 Pts";
+            this.timerbuy.UseVisualStyleBackColor = true;
+            this.timerbuy.Click += new System.EventHandler(this.timerbuy_Click);
+            // 
+            // lbltimerupgrade
+            // 
+            this.lbltimerupgrade.BackColor = System.Drawing.Color.AliceBlue;
+            this.lbltimerupgrade.Location = new System.Drawing.Point(646, 9);
+            this.lbltimerupgrade.Name = "lbltimerupgrade";
+            this.lbltimerupgrade.Size = new System.Drawing.Size(240, 23);
+            this.lbltimerupgrade.TabIndex = 31;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::memeClicker.Properties.Resources._556download;
+            this.pictureBox16.Location = new System.Drawing.Point(959, 310);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(349, 237);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 35;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::memeClicker.Properties.Resources.download__1_;
+            this.pictureBox15.Location = new System.Drawing.Point(649, 310);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(319, 237);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 34;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::memeClicker.Properties.Resources.iv77xwqqgma21;
+            this.pictureBox14.Location = new System.Drawing.Point(959, 352);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(350, 195);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 33;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::memeClicker.Properties.Resources.xtlylg81xs921;
+            this.pictureBox13.Location = new System.Drawing.Point(664, 352);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(289, 195);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 32;
+            this.pictureBox13.TabStop = false;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::memeClicker.Properties.Resources.images__2_;
@@ -229,9 +314,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::memeClicker.Properties.Resources.maxresdefault__1_;
-            this.pictureBox11.Location = new System.Drawing.Point(286, 367);
+            this.pictureBox11.Location = new System.Drawing.Point(286, 352);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(372, 180);
+            this.pictureBox11.Size = new System.Drawing.Size(372, 195);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 24;
             this.pictureBox11.TabStop = false;
@@ -348,49 +433,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1208, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 28);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Click to exit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // lbltimer
-            // 
-            this.lbltimer.BackColor = System.Drawing.Color.AliceBlue;
-            this.lbltimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltimer.Location = new System.Drawing.Point(901, 2);
-            this.lbltimer.Name = "lbltimer";
-            this.lbltimer.Size = new System.Drawing.Size(285, 28);
-            this.lbltimer.TabIndex = 29;
-            // 
-            // timerbuy
-            // 
-            this.timerbuy.Location = new System.Drawing.Point(519, 6);
-            this.timerbuy.Name = "timerbuy";
-            this.timerbuy.Size = new System.Drawing.Size(121, 28);
-            this.timerbuy.TabIndex = 30;
-            this.timerbuy.Text = "Buy Timer - 200 Pts";
-            this.timerbuy.UseVisualStyleBackColor = true;
-            this.timerbuy.Click += new System.EventHandler(this.timerbuy_Click);
-            // 
-            // lbltimerupgrade
-            // 
-            this.lbltimerupgrade.BackColor = System.Drawing.Color.AliceBlue;
-            this.lbltimerupgrade.Location = new System.Drawing.Point(646, 9);
-            this.lbltimerupgrade.Name = "lbltimerupgrade";
-            this.lbltimerupgrade.Size = new System.Drawing.Size(240, 23);
-            this.lbltimerupgrade.TabIndex = 31;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1304, 547);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.lbltimerupgrade);
             this.Controls.Add(this.timerbuy);
             this.Controls.Add(this.lbltimer);
@@ -423,6 +475,10 @@
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -472,6 +528,10 @@
         private System.Windows.Forms.Label lbltimer;
         private System.Windows.Forms.Button timerbuy;
         private System.Windows.Forms.Label lbltimerupgrade;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }
 

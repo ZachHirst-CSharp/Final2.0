@@ -151,5 +151,26 @@
   <ItemGroup>
     <None Include="Resources\title.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8dwklgzao5921.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iv77xwqqgma21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eu2e5nfwlla21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mfu0skrl3ma21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wzmz0db9kja21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xtlylg81xs921.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\556download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

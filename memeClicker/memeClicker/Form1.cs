@@ -16,44 +16,44 @@ namespace memeClicker
     {
         private static System.Timers.Timer aTimer;
         public double[] MultiplierArray = { 1.1, 1.5, 2.1, 8.7, 21.3, 29.9, 41.2, 55.6, 70.3, 90.5}; // Array That decides the multiplier
+        public int[] TickArray = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }; //tick array
         public double balance = 0;
         public int ticktimer = 1, timerupgrade;
-        public int tick1 = 1, tick2 = 1, tick3 = 1, tick4 = 1, tick5 = 1, tick6 = 1, tick7 = 1, tick8 = 1, tick9 = 1, tick10 = 1;
         public double upgradestrength = 0;
 
-        private void meme_Display()
+        private void meme_Display(double balance_1)
         {
-            if (balance >= 10 && balance < 100) // Makes memes visible at certain value
+            if (balance_1 >= 10 && balance_1 < 100) // Makes memes visible at certain value
             {
                 pictureBox3.Visible = false;
                 meme1.Visible = true;
                 lblmeme1.Visible = true;
             }
-            else if (balance >= 100 && balance < 1000)
+            else if (balance_1 >= 100 && balance_1 < 1000)
             {
                 pictureBox4.Visible = false;
                 meme2.Visible = true;
                 lblmeme2.Visible = true;
             }
-            else if (balance >= 1000 && balance < 10000)
+            else if (balance_1 >= 1000 && balance_1 < 10000)
             {
                 pictureBox6.Visible = false;
                 meme3.Visible = true;
                 lblmeme3.Visible = true;
             }
-            else if (balance >= 10000 && balance < 100000)
+            else if (balance_1 >= 10000 && balance_1 < 100000)
             {
                 pictureBox8.Visible = false;
                 meme4.Visible = true;
                 lblmeme4.Visible = true;
             }
-            else if (balance >= 100000 && balance < 500000)
+            else if (balance_1 >= 100000 && balance_1 < 500000)
             {
                 pictureBox10.Visible = false;
                 meme5.Visible = true;
                 lblmeme5.Visible = true;
             }
-            else if (balance >= 500000 && balance < 1000000)
+            else if (balance_1 >= 500000 && balance_1 < 1000000)
             {
                 pictureBox12.Visible = false;
                 meme6.Visible = true;
@@ -63,6 +63,8 @@ namespace memeClicker
 
         private void timerbuy_Click(object sender, EventArgs e)
         {
+
+            /*
             if(balance < 200)
             {
 
@@ -79,8 +81,9 @@ namespace memeClicker
                 ++ticktimer;
                 lblNumber.Text = "" + balance; //labeling the points
                 lbltimerupgrade.Text = "Multiplier: " + timerupgrade; //timer upgrade
-                meme_Display();
+                meme_Display(balance);
             }
+            */
         }
 
         private void OnTimedEvent(object sender, ElapsedEventArgs e)
@@ -90,7 +93,7 @@ namespace memeClicker
             balance = balance + timerupgrade; //50 points per 5 seconds
             lblNumber.Text = "" + balance; //labeling the points
             lbltimerupgrade.Text = "Multiplier: " + timerupgrade; //timer upgrade
-            meme_Display();
+            meme_Display(balance);
             throw new NotImplementedException();
         }
 
@@ -110,7 +113,7 @@ namespace memeClicker
             lblNumber.Text = "" + balance; // displays balance 
             balance = upgradestrength + balance; //equation for multiplier and balance 
             lblmultiplier.Text = "Multiplier = " + upgradestrength; // display for user multiplier
-            meme_Display();
+            meme_Display(balance);
         }
 
         private void meme1_Click(object sender, EventArgs e) // Upgrade #1
@@ -119,15 +122,14 @@ namespace memeClicker
             {
 
             }
-           else if(balance >= 10 && tick1 < 6)
+           else if(balance >= 10 && TickArray[0] < 6)
             {
-               
-                    upgradestrength += (MultiplierArray[0] * tick1);
-                    ++tick1;
+                    upgradestrength += (MultiplierArray[0] * TickArray[0]);
+                    ++TickArray[0];
                     balance -= 10;
                     lblNumber.Text = "" + balance;
-                    lblmeme1.Text = "Upgrade: " + (tick1 - 1);
-                
+                    lblmeme1.Text = "Upgrade: " + (TickArray[0] - 1);
+                    meme_Display(balance);
             }
         }
 
@@ -137,13 +139,14 @@ namespace memeClicker
             {
 
             }
-            else if(balance >= 100 && tick2 < 6)
+            else if(balance >= 100 && TickArray[1] < 6)
             {
-                upgradestrength += (MultiplierArray[1] * tick2);
-                ++tick2;
+                upgradestrength += (MultiplierArray[1] * TickArray[1]);
+                ++TickArray[1];
                 balance -= 100;
                 lblNumber.Text = "" + balance;
-                lblmeme2.Text = "Upgrade: " + (tick2 - 1);
+                lblmeme2.Text = "Upgrade: " + (TickArray[1] - 1);
+                meme_Display(balance);
             }
         }
 
@@ -153,13 +156,14 @@ namespace memeClicker
             {
 
             }
-            else if(balance >= 1000 && tick3 < 6)
+            else if(balance >= 1000 && TickArray[2] < 6)
             {
-                upgradestrength += (MultiplierArray[2] * tick3);
-                ++tick3;
+                upgradestrength += (MultiplierArray[2] * TickArray[2]);
+                ++TickArray[2];
                 balance -= 1000;
                 lblNumber.Text = "" + balance;
-                lblmeme3.Text = "Upgrade: " + (tick3 - 1);
+                lblmeme3.Text = "Upgrade: " + (TickArray[2] - 1);
+                meme_Display(balance);
             }
         }
 
@@ -169,13 +173,14 @@ namespace memeClicker
             {
 
             }
-            else if (balance >= 10000 && tick4 < 6)
+            else if (balance >= 10000 && TickArray[3] < 6)
             {
-                upgradestrength += (MultiplierArray[3] * tick4);
-                ++tick4;
+                upgradestrength += (MultiplierArray[3] * TickArray[3]);
+                ++TickArray[3];
                 balance -= 10000;
                 lblNumber.Text = "" + balance;
-                lblmeme4.Text = "Upgrade: " + (tick4 - 1);
+                lblmeme4.Text = "Upgrade: " + (TickArray[3] - 1);
+                meme_Display(balance);
             }
         }
 
@@ -185,13 +190,14 @@ namespace memeClicker
             {
 
             }
-            else if (balance >= 100000 && tick5 < 6)
+            else if (balance >= 100000 && TickArray[4] < 6)
             {
-                upgradestrength += (MultiplierArray[4] * tick5);
-                ++tick5;
+                upgradestrength += (MultiplierArray[4] * TickArray[3]);
+                ++TickArray[4];
                 balance -= 100000;
                 lblNumber.Text = "" + balance;
-                lblmeme5.Text = "Upgrade: " + (tick5 - 1);
+                lblmeme5.Text = "Upgrade: " + (TickArray[4] - 1);
+                meme_Display(balance);
             }
         }
 
@@ -201,13 +207,14 @@ namespace memeClicker
             {
 
             }
-            else if (balance >= 500000 && tick6 < 6)
+            else if (balance >= 500000 && TickArray[5] < 6)
             {
-                upgradestrength += (MultiplierArray[5] * tick6);
-                ++tick6;
+                upgradestrength += (MultiplierArray[5] * TickArray[5]);
+                ++TickArray[5];
                 balance -= 100000;
                 lblNumber.Text = "" + balance;
-                lblmeme6.Text = "Upgrade: " + (tick6 - 1);
+                lblmeme6.Text = "Upgrade: " + (TickArray[5] - 1);
+                meme_Display(balance);
             }
         }
     }

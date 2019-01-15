@@ -83,9 +83,29 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _556download {
+            get {
+                object obj = ResourceManager.GetObject("_556download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5768a9b952f6a9a333b22142abf7ccfc {
             get {
                 object obj = ResourceManager.GetObject("_5768a9b952f6a9a333b22142abf7ccfc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8dwklgzao5921 {
+            get {
+                object obj = ResourceManager.GetObject("_8dwklgzao5921", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +136,16 @@ namespace memeClicker.Properties {
         internal static System.Drawing.Bitmap download__1_ {
             get {
                 object obj = ResourceManager.GetObject("download__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eu2e5nfwlla21 {
+            get {
+                object obj = ResourceManager.GetObject("eu2e5nfwlla21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +193,16 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iv77xwqqgma21 {
+            get {
+                object obj = ResourceManager.GetObject("iv77xwqqgma21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maxresdefault {
             get {
                 object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
@@ -176,6 +216,16 @@ namespace memeClicker.Properties {
         internal static System.Drawing.Bitmap maxresdefault__1_ {
             get {
                 object obj = ResourceManager.GetObject("maxresdefault__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mfu0skrl3ma21 {
+            get {
+                object obj = ResourceManager.GetObject("mfu0skrl3ma21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +266,26 @@ namespace memeClicker.Properties {
         internal static System.Drawing.Bitmap title {
             get {
                 object obj = ResourceManager.GetObject("title", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wzmz0db9kja21 {
+            get {
+                object obj = ResourceManager.GetObject("wzmz0db9kja21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xtlylg81xs921 {
+            get {
+                object obj = ResourceManager.GetObject("xtlylg81xs921", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

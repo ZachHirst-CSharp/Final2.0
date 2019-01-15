@@ -169,4 +169,25 @@
   <data name="title" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eu2e5nfwlla21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eu2e5nfwlla21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iv77xwqqgma21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iv77xwqqgma21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mfu0skrl3ma21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mfu0skrl3ma21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wzmz0db9kja21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wzmz0db9kja21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xtlylg81xs921" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xtlylg81xs921.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_556download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\556download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8dwklgzao5921" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8dwklgzao5921.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
