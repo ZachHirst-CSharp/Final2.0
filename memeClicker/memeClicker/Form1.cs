@@ -15,7 +15,7 @@ namespace memeClicker
     public partial class Form1 : Form
     {
         private static System.Timers.Timer aTimer;
-        public double[] MultiplierArray = { 1.1, 1.5, 2.1, 8.7, 21.3, 29.9, 41.2, 55.6, 70.3, 90.5}; // Array That decides the multiplier
+        public double[] MultiplierArray = { 1.1, 1.5, 2.1, 8.7, 21.3, 29.9, 41.2, 55.6, 70.3, 90.5 }; // Array That decides the multiplier
         public int[] TickArray = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }; //tick array
         public double balance = 0;
         public int ticktimer = 1, timerupgrade;
@@ -58,6 +58,22 @@ namespace memeClicker
                 pictureBox12.Visible = false;
                 meme6.Visible = true;
                 lblmeme6.Visible = true;
+            }
+            else if (balance_1 >= 1000000 && balance_1 < 5000000)
+            {
+                pictureBox15.Visible = false;
+                btnmeme7.Visible = true;
+                lblmeme7.Visible = true;
+            }
+            else if (balance_1 >= 5000000 && balance_1 < 100000000)
+            {
+                pictureBox16.Visible = false;
+                btnmeme8.Visible = true;
+                lblmeme8.Visible = true;
+            }
+            else if (balance_1 > 100000000)
+            {
+                lblNumber.Text = " Congrats you win ";
             }
         }
 
@@ -112,58 +128,59 @@ namespace memeClicker
             balance++; // adds to balance every click
             lblNumber.Text = "" + balance; // displays balance 
             balance = upgradestrength + balance; //equation for multiplier and balance 
+            lblNumber.Text = "" + balance; //displaying total balance 
             lblmultiplier.Text = "Multiplier = " + upgradestrength; // display for user multiplier
-            meme_Display(balance);
+            meme_Display(balance); //calling meme display function for unlocking new dank memes
         }
 
         private void meme1_Click(object sender, EventArgs e) // Upgrade #1
         {
-           if(balance < 10)
+            if (balance < 10)
             {
 
             }
-           else if(balance >= 10 && TickArray[0] < 6)
+            else if (balance >= 10 && TickArray[0] < 6)
             {
-                    upgradestrength += (MultiplierArray[0] * TickArray[0]);
-                    ++TickArray[0];
-                    balance -= 10;
-                    lblNumber.Text = "" + balance;
-                    lblmeme1.Text = "Upgrade: " + (TickArray[0] - 1);
-                    meme_Display(balance);
+                upgradestrength += (MultiplierArray[0] * TickArray[0]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[0]; // adding to specific tick counter for certain meme
+                balance -= 10; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme1.Text = "Upgrade: " + (TickArray[0] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
 
         private void meme2_Click(object sender, EventArgs e) // Upgrade #2
         {
-            if(balance < 100)
+            if (balance < 100)
             {
 
             }
-            else if(balance >= 100 && TickArray[1] < 6)
+            else if (balance >= 100 && TickArray[1] < 6)
             {
-                upgradestrength += (MultiplierArray[1] * TickArray[1]);
-                ++TickArray[1];
-                balance -= 100;
-                lblNumber.Text = "" + balance;
-                lblmeme2.Text = "Upgrade: " + (TickArray[1] - 1);
-                meme_Display(balance);
+                upgradestrength += (MultiplierArray[1] * TickArray[1]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[1]; // adding to specific tick counter for certain meme
+                balance -= 100; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme2.Text = "Upgrade: " + (TickArray[1] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
 
         private void meme3_Click(object sender, EventArgs e) // Upgrade #3
         {
-            if(balance < 1000)
+            if (balance < 1000)
             {
 
             }
-            else if(balance >= 1000 && TickArray[2] < 6)
+            else if (balance >= 1000 && TickArray[2] < 6)
             {
-                upgradestrength += (MultiplierArray[2] * TickArray[2]);
-                ++TickArray[2];
-                balance -= 1000;
-                lblNumber.Text = "" + balance;
-                lblmeme3.Text = "Upgrade: " + (TickArray[2] - 1);
-                meme_Display(balance);
+                upgradestrength += (MultiplierArray[2] * TickArray[2]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[2]; // adding to specific tick counter for certain meme
+                balance -= 1000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme3.Text = "Upgrade: " + (TickArray[2] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
 
@@ -175,12 +192,12 @@ namespace memeClicker
             }
             else if (balance >= 10000 && TickArray[3] < 6)
             {
-                upgradestrength += (MultiplierArray[3] * TickArray[3]);
-                ++TickArray[3];
-                balance -= 10000;
-                lblNumber.Text = "" + balance;
-                lblmeme4.Text = "Upgrade: " + (TickArray[3] - 1);
-                meme_Display(balance);
+                upgradestrength += (MultiplierArray[3] * TickArray[3]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[3]; // adding to specific tick counter for certain meme
+                balance -= 10000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme4.Text = "Upgrade: " + (TickArray[3] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
 
@@ -192,12 +209,12 @@ namespace memeClicker
             }
             else if (balance >= 100000 && TickArray[4] < 6)
             {
-                upgradestrength += (MultiplierArray[4] * TickArray[3]);
-                ++TickArray[4];
-                balance -= 100000;
-                lblNumber.Text = "" + balance;
-                lblmeme5.Text = "Upgrade: " + (TickArray[4] - 1);
-                meme_Display(balance);
+                upgradestrength += (MultiplierArray[4] * TickArray[4]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[4]; // adding to specific tick counter for certain meme
+                balance -= 100000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme5.Text = "Upgrade: " + (TickArray[4] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
 
@@ -209,12 +226,46 @@ namespace memeClicker
             }
             else if (balance >= 500000 && TickArray[5] < 6)
             {
-                upgradestrength += (MultiplierArray[5] * TickArray[5]);
-                ++TickArray[5];
-                balance -= 100000;
-                lblNumber.Text = "" + balance;
-                lblmeme6.Text = "Upgrade: " + (TickArray[5] - 1);
-                meme_Display(balance);
+                upgradestrength += (MultiplierArray[5] * TickArray[5]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[5]; // adding to specific tick counter for certain meme
+                balance -= 500000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme6.Text = "Upgrade: " + (TickArray[5] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
+            }
+        }
+
+        private void btnmeme7_Click(object sender, EventArgs e) // Upgrade #7
+        {
+            if (balance < 1000000)
+            {
+
+            }
+            else if (balance >= 1000000 && TickArray[6] < 6)
+            {
+                upgradestrength += (MultiplierArray[6] * TickArray[6]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[6]; // adding to specific tick counter for certain meme
+                balance -= 1000000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme7.Text = "Upgrade: " + (TickArray[6] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
+            }
+        }
+
+        private void btnmeme8_Click(object sender, EventArgs e) // Upgrade #8
+        {
+            if (balance < 5000000)
+            {
+
+            }
+            else if (balance >= 5000000 && TickArray[7] < 6)
+            {
+                upgradestrength += (MultiplierArray[7] * TickArray[7]); // equation calculating upgrade strength using two different arrays
+                ++TickArray[7]; // adding to specific tick counter for certain meme
+                balance -= 500000; //subtracting the certain cost of upgrade
+                lblNumber.Text = "" + balance; //displaying total balance 
+                lblmeme8.Text = "Upgrade: " + (TickArray[7] - 1); // display for user multiplier
+                meme_Display(balance); //calling meme display function for unlocking new dank memes
             }
         }
     }

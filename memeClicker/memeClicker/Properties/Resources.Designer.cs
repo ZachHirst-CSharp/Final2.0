@@ -73,6 +73,16 @@ namespace memeClicker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12345 {
+            get {
+                object obj = ResourceManager.GetObject("_12345", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1488946843939347 {
             get {
                 object obj = ResourceManager.GetObject("_1488946843939347", resourceCulture);

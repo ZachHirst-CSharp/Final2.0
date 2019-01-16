@@ -30,36 +30,36 @@ namespace memeClicker
 
         private void button3_Click(object sender, EventArgs e) // opens secret buttons for secret memes
         {
-            button4.Visible = true; //secret meme buttons
-            button5.Visible = true;
-            button6.Visible = true;
-            button7.Visible = true;
-            button8.Visible = true;
+            hdnbtn1.Visible = true; //secret meme buttons
+            hdnbtn2.Visible = true;
+            hdnbtn3.Visible = true;
+            hdnbtn4.Visible = true;
+            hdnbtn5.Visible = true;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void hdnbtn1_Click(object sender, EventArgs e) // shows hidden meme that probably isnt school appropriate lol
         {
-
+            hidden1.Visible = true;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void hdnbtn2_Click(object sender, EventArgs e)  // shows different hidden meme that probably isnt school appropriate 
         {
-
+            hidden2.Visible = true;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void hdnbtn3_Click(object sender, EventArgs e) // shows different hidden meme that probably isnt school appropriate 
         {
-
+            hidden3.Visible = true;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void hdnbtn4_Click(object sender, EventArgs e) // shows different hidden meme that probably isnt school appropriate 
         {
-
+            hidden4.Visible = true;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void hdnbtn5_Click(object sender, EventArgs e) // shows different hidden meme that probably isnt school appropriate 
         {
-
+            hidden5.Visible = true;
         }
     }
 }

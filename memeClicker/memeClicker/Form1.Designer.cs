@@ -64,6 +64,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnmeme7 = new System.Windows.Forms.Button();
+            this.btnmeme8 = new System.Windows.Forms.Button();
+            this.lblmeme7 = new System.Windows.Forms.Label();
+            this.lblmeme8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -266,7 +270,7 @@
             this.pictureBox16.Image = global::memeClicker.Properties.Resources._556download;
             this.pictureBox16.Location = new System.Drawing.Point(959, 310);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(349, 237);
+            this.pictureBox16.Size = new System.Drawing.Size(350, 237);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 35;
             this.pictureBox16.TabStop = false;
@@ -433,12 +437,56 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnmeme7
+            // 
+            this.btnmeme7.Location = new System.Drawing.Point(687, 321);
+            this.btnmeme7.Name = "btnmeme7";
+            this.btnmeme7.Size = new System.Drawing.Size(96, 23);
+            this.btnmeme7.TabIndex = 36;
+            this.btnmeme7.Text = "1000000 Points";
+            this.btnmeme7.UseVisualStyleBackColor = true;
+            this.btnmeme7.Visible = false;
+            this.btnmeme7.Click += new System.EventHandler(this.btnmeme7_Click);
+            // 
+            // btnmeme8
+            // 
+            this.btnmeme8.Location = new System.Drawing.Point(988, 322);
+            this.btnmeme8.Name = "btnmeme8";
+            this.btnmeme8.Size = new System.Drawing.Size(112, 23);
+            this.btnmeme8.TabIndex = 37;
+            this.btnmeme8.Text = "5000000 Points";
+            this.btnmeme8.UseVisualStyleBackColor = true;
+            this.btnmeme8.Visible = false;
+            this.btnmeme8.Click += new System.EventHandler(this.btnmeme8_Click);
+            // 
+            // lblmeme7
+            // 
+            this.lblmeme7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblmeme7.Location = new System.Drawing.Point(806, 321);
+            this.lblmeme7.Name = "lblmeme7";
+            this.lblmeme7.Size = new System.Drawing.Size(111, 23);
+            this.lblmeme7.TabIndex = 38;
+            this.lblmeme7.Visible = false;
+            // 
+            // lblmeme8
+            // 
+            this.lblmeme8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblmeme8.Location = new System.Drawing.Point(1167, 321);
+            this.lblmeme8.Name = "lblmeme8";
+            this.lblmeme8.Size = new System.Drawing.Size(100, 23);
+            this.lblmeme8.TabIndex = 39;
+            this.lblmeme8.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1304, 547);
+            this.Controls.Add(this.lblmeme8);
+            this.Controls.Add(this.lblmeme7);
+            this.Controls.Add(this.btnmeme8);
+            this.Controls.Add(this.btnmeme7);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -532,6 +580,10 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Button btnmeme7;
+        private System.Windows.Forms.Button btnmeme8;
+        private System.Windows.Forms.Label lblmeme7;
+        private System.Windows.Forms.Label lblmeme8;
     }
 }
 
